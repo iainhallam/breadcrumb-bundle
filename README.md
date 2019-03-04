@@ -120,10 +120,10 @@ You can then set parameters for both directly on the `Breadcrumb` object, for in
     
         $this->get('thormeier_breadcrumb.breadcrumb_provider')
             ->getBreadcrumbByRoute('acme_demo_product_detail')
-            ->setRouteParams(array(
+            ->setRouteParameters(array(
                 'id' => $product->getId(),
             ))
-            ->setLabelParams(array(
+            ->setLabelParameters(array(
                 'name' => $product->getName(),
             ));
             
